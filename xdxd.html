@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colorful Text</title>
+    <script>
+        function changeColor() {
+            var text = document.getElementById("colorfulText");
+            var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            text.style.color = randomColor;
+        }
+        function Max() {
+            const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            let Maxboi = "";    
+            for (let i = 0; i < number.length; i++) {
+                Maxboi += number[i] + "<br>";
+              }
+        }
+        document.getElementById("demo").innerHTML = Maxboi;
+    </script>
+    <style>
+        #colorfulText {
+            font-size: 24px;
+            cursor: pointer;
+        }   
+    </style>    
+</head>
+<body>
+    <h1 onclick="changeColor()">Click Me to Change Color!</h1>
+    <p id="colorfulText">I'm a colorful text!</p>
+    <script>
+        function Max() {
+        var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        let Maxboi = 0;    
+        let checker = 0;
+        for (let i = 0; i < number.length; i++) {
+            checker = number[i];
+            if (checker > Maxboi) {
+                Maxboi = checker
+            }
+          }
+          return Maxboi
+    }
+    console.log(Max())
+</script>
+    
+</body>
+</html> 
